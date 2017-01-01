@@ -26,8 +26,8 @@ Wifi enabled heart rate sendor
 * Chart.js for graphing BPM
 
 # Source
-Arduino and sensor hookup: wifi_heart_rate_sensor_data
-ESP-01 web-api server: wifi_heart_rate_sensor_webserver
+* Arduino and sensor hookup: wifi_heart_rate_sensor_data
+* ESP-01 web-api server: wifi_heart_rate_sensor_webserver
 
 # TODO
 * client.flush when body for message is not needed
