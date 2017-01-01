@@ -1,16 +1,18 @@
 Wifi enabled heart rate sendor
 
-Hardware
+# Hardware
+
 * ESP8266 ESP-01 wifi module
 * Arduino (or try the ESP8266 ADC pin)
 * Heart rate sensor (http://pulsesensor.com)
 
-Software
+# Software
+
 * A basic web-server with simple web-api
 * Pages and files are compiled as literal strings along with the rest of the sketch
 * Use Internal Time Protocol (ITP) to get current time
 
-Web-API
+# Web-API
 * "GET / ": index.html
 * "GET /client.js": client side JS
 * "GET /style.css": css style
@@ -19,14 +21,15 @@ Web-API
 * "GET /api/v1/bpm": get the beats per minute in JSON { "unix_time_s" : sec, "bpm", bpm }
 * "GET /api/v1/bpm?gt=" get the bpm greater or equal to time (for incremental updates)
 
-Client side
+# Client side
 * Pretty basic for now
 * Chart.js for graphing BPM
 
+# Source
 Arduino and sensor hookup: wifi_heart_rate_sensor_data
 ESP-01 web-api server: wifi_heart_rate_sensor_webserver
 
-TODO
+# TODO
 * client.flush when body for message is not needed
 * Save heartbeat data in non-destructive flash
 * Use Websockets to indicate pulses
